@@ -7,6 +7,16 @@ import List from '../ListNews'
 import Error from '../Error'
 
 class Main extends Component {
+  constructor(props) {
+    super(props)
+  
+
+    //aqui se hacen los estados para sibling to sibling
+    this.state = {
+       
+    }
+  }
+  
   render() {
     return (
       <main>

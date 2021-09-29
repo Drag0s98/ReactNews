@@ -14,13 +14,14 @@ class Main extends Component {
 
     //aqui se hacen los estados para sibling to sibling
     this.state = {
-      data: []
+      data: ''
     }
   }
 
 
   handleSetData = (data) => {
     this.setState({ data: [...this.state.data, data] })
+    console.log('ejecuto***' + data);
   }
 
   render() {
@@ -29,9 +30,7 @@ class Main extends Component {
         <Switch>
           <Route path='/' component={Home} exact />
           <Route path='/form' component={() => <Form handleStateData={(data) => this.handleSetData(data)} />} />
-          <Route component={() => <Api handleStateData={(data) => this.handleSetData(data)} />} />
-
-          <Route path='/news' component={() => <News news={this.state.data} />} />
+          <Route path='/list' component={() => <Api handleStateData={() => this.state.data} />} />
           <Route component={Error} />
         </Switch>
       </main>

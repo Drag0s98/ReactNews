@@ -15,11 +15,20 @@ class ListNews extends Component {
   }
 
   async componentDidMount() {
+    console.log(this.props.handleStateData());
     let country = this.state.country
     let category = this.state.category
-    let res = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=8197b9847d9a42359c9a289cd44d91ef`)
+    await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=b082605df5f548f48320cc9653ff30e1`)
+      .then((res) => {
+        console.log('Api recived');
+        this.setState({ data: res.data.articles })
+        // this.setState({ data: this.props.handleStateData() })
+        this.setState({ data: [...this.state.data, this.props.handleStateData()] })
+
+        console.log(this.state.data.flat());
+      })
     console.log('Api recived');
-    this.setState({ data: res.data.articles })
+    // this.setState({ data: res.data.articles })
   }
   // handleLoad = ( async () => {
   //   console.log();
@@ -40,12 +49,11 @@ class ListNews extends Component {
   //   })
   //   this.props.handleStateData(map)
   // })()
-  
+
   render() {
     return (
-      <>
-      {() => this.handleLoad()}
-      </>
+      <div>
+      </div>
     );
   }
 }

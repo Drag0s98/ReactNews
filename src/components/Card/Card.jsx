@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+  import React, { Component } from "react";
 import Api from '../ListNews'
 import Local from '../Form'
 

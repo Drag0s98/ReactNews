@@ -14,7 +14,7 @@ class Form extends Component {
     let author = event.target.elements.author.value;
     let content = event.target.elements.content.value;
     let description = event.target.elements.description.value;
-    let publisedAt = event.target.elements.publisedAt.value;
+    let publishedAt = event.target.elements.publishedAt.value;
     let title = event.target.elements.title.value;
     let url = event.target.elements.url.value;
     let urlToImage = event.target.elements.urlToImage.value;
@@ -22,7 +22,7 @@ class Form extends Component {
       author: author,
       content: content,
       description: description,
-      publisedAt: publisedAt,
+      publishedAt: publishedAt,
       title: title,
       url: url,
       urlToImage: urlToImage
@@ -41,7 +41,7 @@ class Form extends Component {
           <label>Description</label>
           <input type="text" name='description' />
           <label>Publised at</label>
-          <input type="date" name='publisedAt' />
+          <input type="date" name='publishedAt' />
           <label>Title</label>
           <input type="text" name='title' />
           <label>Url</label>

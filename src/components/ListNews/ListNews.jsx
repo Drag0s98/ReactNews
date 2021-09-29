@@ -22,7 +22,7 @@ class ListNews extends Component {
     await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=b082605df5f548f48320cc9653ff30e1`)
       .then((res) => {
         console.log('Api recived');
-        this.setState({ data: res.data.articles })
+        this.setState({ data: res.data.articles.slice(0, 5) })
         if (this.props.handleStateData() != []) {
           this.props.handleStateData().map((param) => {
             return this.setState({ data: [...this.state.data, param] })
@@ -38,7 +38,7 @@ class ListNews extends Component {
   }
 
   paintCards = () => {
-    return this.state.data.map((param, i) => <Card info={param} key={i} remove={() => this.removeOne(i)}/>)
+    return this.state.data.map((param, i) => <Card info={param} key={i} remove={() => this.removeOne(i)} />)
   }
 
   render() {

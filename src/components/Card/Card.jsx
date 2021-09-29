@@ -20,14 +20,14 @@ class Card extends Component {
     return (
       <section>
         <article>
-            <p>{author}</p>
-            <p>{content}</p>
-            <p>{description}</p>
-            <p>{publishedAt}</p>
-            <p>{title}</p>
-            <p>{url}</p>
-            <p>{urlToImage}</p>
-            <button onClick={this.props.remove}>Delete</button>
+          <p>{author}</p>
+          <p>{content}</p>
+          <p>{description}</p>
+          <p>{publishedAt}</p>
+          <p>{title}</p>
+          <p>{url}</p>
+          <img src={urlToImage} alt={title}/>
+          <button onClick={this.props.remove}>Delete</button>
         </article>
       </section>
     );

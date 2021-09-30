@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+@import './utils/mixins';
+@import './utils/variables.scss';
+
+
+@import './views/app';
+@import './components/header';
+@import './components/footer';
+@import './components/main';
+@import './components/nav';
+@import './components/card';
+@import './components/listNews';
+@import './components/home';
+@import './components/form';
+@import './components/error';

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Button } from "react-bootstrap";
 import Nav from '../Nav';
 import { userContext } from '../../context/userContext'
 
@@ -7,15 +7,15 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>ReactFilms</h1>
+        <h1 className='title'>ReactFilms</h1>
         <Nav />
         <userContext.Consumer>
           {({ user, logout }) => 
             user.name ?
-              <>
+              <div className='welcome'>
                 <p>Bienvenido, {user.name}</p>
-                <button onClick={() => logout()}>Logout</button>
-              </> : ""
+                <Button variant="outline-light" onClick={() => logout()}>Logout</Button>
+              </div> : ""
           }
         </userContext.Consumer>
       </header>

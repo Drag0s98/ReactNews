@@ -1,0 +1,13 @@
+nav { 
+    background-color: #6B705C ;
+    border-radius: 10px;
+    z-index: 10;
+    & div> div > a {
+        color: white !important;
+        & > a {
+            text-decoration: none ;
+            color: white;
+        }
+    }
+
+}

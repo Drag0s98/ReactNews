@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import React, { Component } from 'react'
 
 //Imports personales
-import './App.css';
+import './styles/styles.scss';
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'

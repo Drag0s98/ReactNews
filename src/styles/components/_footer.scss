@@ -1,0 +1,16 @@
+footer{
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #B7B7A4;
+    color: #6B705C;
+    display: flex;
+    align-items: center;
+    & > div{
+        width: 100%;
+        font-size: 0.7em;
+    }
+}

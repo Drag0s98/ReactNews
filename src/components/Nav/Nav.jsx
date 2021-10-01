@@ -1,29 +1,30 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Nav, Navbar, Container } from "react-bootstrap";
-class NavClass extends Component {
-  render() {
-    return (
 
-      <Navbar collapseOnSelect expand="lg" bg="#6B705C" variant="dark">
-        <Container>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link><Link to='/'>Home</Link></Nav.Link>
-              <Nav.Link><Link to='/form'>Add New</Link></Nav.Link>
-              <Nav.Link><Link to='/list'>Films</Link></Nav.Link>
-              <Nav.Link eventKey={2} href="https://github.com/Drag0s98/toDo_react">GitHub</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
 
-    );
-  }
+
+const NavBody = () => {
+  return (
+    <nav>
+      <Nav fill variant="tabs" defaultActiveKey="/">
+        <Nav.Item>
+          <Nav.Link as='p'><Link to='/'>Home</Link></Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as='p'><Link to='/form'>AddNew</Link></Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as='p'><Link to='/list'>Films</Link></Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </nav>
+  )
 }
 
-export default NavClass;
+export default NavBody
+
+
 /*
       <nav>
 

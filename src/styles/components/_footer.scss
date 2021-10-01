@@ -1,12 +1,10 @@
 footer{
     height: 3em;
     width: 100%;
-    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #B7B7A4;
-    color: #6B705C;
+    background-color: #4b4b4b;
+    opacity: .6;
+    position: fixed;
     display: flex;
     align-items: center;
     & > div{
@@ -14,3 +12,8 @@ footer{
         font-size: 0.7em;
     }
 }
+@media (min-width: $breakpoint-tablet) {
+    footer{
+        position: fixed;
+    }
+  }

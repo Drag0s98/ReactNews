@@ -4,10 +4,11 @@ import Nav from '../Nav';
 import { userContext } from '../../context/userContext'
 
 class Header extends Component {
+
   render() {
     return (
       <header>
-        <h1 className='title'>ReactFilms</h1>
+        <h1 className='title'>ReactNews</h1>
         <Nav />
         <userContext.Consumer>
           {({ user, logout }) => 

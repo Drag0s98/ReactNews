@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Form.css'
 
 class Form extends Component {
 
@@ -32,14 +33,14 @@ class Form extends Component {
   render() {
     return (
       <>
-        <h5>Agrega una pelicula :</h5>
-        <form onSubmit={this.submitAndsetValues}>
+        <h5 className='formTitle'>Agrega una pelicula</h5>
+        <form onSubmit={this.submitAndsetValues} className='newsForm'>
           <label>Author</label>
           <input type="text" name='author' />
           <label>Content</label>
-          <input type="text" name='content' />
+          <textarea name="content" className='content' cols="30" rows="10" />
           <label>Description</label>
-          <input type="text" name='description' />
+          <textarea name="description" className='description' cols="30" rows="10" />
           <label>Publised at</label>
           <input type="date" name='publishedAt' />
           <label>Title</label>
@@ -48,7 +49,7 @@ class Form extends Component {
           <input type="text" name='url' />
           <label>Image</label>
           <input type="text" name='urlToImage' />
-          <input type="submit" value="Publish" />
+          <input type="submit" value="Publish" className='button' />
         </form>
       </>
     );

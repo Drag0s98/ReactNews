@@ -1,0 +1,17 @@
+header{
+    background-color: #4b4b4b;
+    width: 100%;
+    opacity: .6;
+}
+h1{
+    color: #EB5E28 ;
+}
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+    & > p { 
+        color: #EB5E28;
+    }
+}

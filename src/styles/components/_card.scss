@@ -1,0 +1,22 @@
+.card{ 
+    margin-top: 2em;
+    margin-bottom: 8em;
+    background-color: rgba(0, 0, 0, 0.363);
+    & > div > a {
+        color: #EB5E28;
+    }
+}
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+@media (min-width: $breakpoint-laptops) {
+    @keyframes grow {
+        0% { width: 0% }
+        100% { width: 18rem }
+    }
+    .card{
+        animation-name: grow;
+        animation-duration: 3s;
+    }
+}

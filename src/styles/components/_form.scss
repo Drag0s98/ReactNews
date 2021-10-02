@@ -1,0 +1,49 @@
+.formTitle{
+    border-top: 1px groove rgb(170, 170, 170);
+    border-bottom: 1px groove rgb(170, 170, 170);
+    height: 2em;
+    width: 100%;
+    @include centrado;
+}
+.buttonForm{
+    background-color: #eb5e28;
+    margin-top: 1rem;
+}
+#alert{
+    background-color: rgba(197, 38, 38, 0.288);
+    margin-top: 2em;
+}
+.newsForm{
+    width: 100%;
+    margin-bottom: 10em;
+    & > label { 
+        height: 2em;
+        font-size: x-large;
+        margin-top: 1em;
+    }
+
+    & > input {
+        width: 70%;
+        height: 2em;
+        border-radius: 5px;
+        border: 0;
+        color: black;
+    }
+
+    & > textarea {
+        height: 10rem;
+        width: 70%;
+        border: 0;
+        color: black;
+    }
+
+    & > button {
+        margin-bottom: 5em;
+    }
+
+}
+@media (min-width: $breakpoint-tablet) {
+    .newsForm{
+        margin-bottom: 8em;
+    }
+  }

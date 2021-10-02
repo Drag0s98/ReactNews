@@ -1,6 +1,7 @@
+//Imports Externos
 import React, { Component } from "react";
 import { Card, ListGroup, ListGroupItem, Button } from "react-bootstrap";
-
+//Imports Internos
 import './Card.css'
 
 class Cardbody extends Component {
@@ -14,7 +15,7 @@ class Cardbody extends Component {
   }
 
   render() {
-    const { author, description, publishedAt, title, url, urlToImage } = this.props.info
+    const { author, description, publishedAt, title, url, urlToImage } = this.props.info //Destructuring de lo rebido por la api por props
     return (
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={urlToImage} />

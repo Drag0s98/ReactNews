@@ -1,6 +1,7 @@
+//Imports externos
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-
+//Imports personales
 import { userContext } from '../../context/userContext'
 
 
@@ -12,10 +13,9 @@ class Home extends Component {
 
     this.name = React.createRef();
   }
-  //Paro el formulario para que no se envie
   submitForm = (event) => {
+    //Paro el formulario para que no se envie
     event.preventDefault();
-    console.log('Enviado' + this.name.current.value);
   }
   render() {
     return (

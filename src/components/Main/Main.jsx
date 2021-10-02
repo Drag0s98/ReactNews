@@ -1,6 +1,7 @@
+//Imports externos
 import React, { Component } from "react";
 import { Route, Switch } from 'react-router-dom';
-
+//Imports personales
 import data from '../../data'
 import Home from '../Home'
 import Form from '../Form'
@@ -18,7 +19,7 @@ class Main extends Component {
     }
   }
 
-
+  //Funcion que se la paso a los hijos para recibir sus datos y guardarlos en el padre
   handleSetData = (data) => {
     this.setState({ data: [...this.state.data, data] })
     console.log('ejecuto***' + data);

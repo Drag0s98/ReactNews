@@ -13,7 +13,9 @@ class Form extends Component {
     }
   }
   submitAndsetValues = (event) => {
+    //Paro el formulario
     event.preventDefault();
+    //Cojo lo que recibo del formulario
     let author = event.target.elements.author.value;
     let content = event.target.elements.content.value;
     let description = event.target.elements.description.value;
@@ -21,9 +23,11 @@ class Form extends Component {
     let title = event.target.elements.title.value;
     let url = event.target.elements.url.value;
     let urlToImage = event.target.elements.urlToImage.value;
+    //Verifico que no estan vacios
     if (author === '' || content === '' || description === '' || publishedAt === '' || title === '' || url === '' || urlToImage === '') {
       this.setState({ error: true })
     } else {
+      //Meto esos valores en un objeto
       let data = {
         author: author,
         content: content,
@@ -33,7 +37,9 @@ class Form extends Component {
         url: url,
         urlToImage: urlToImage
       }
+      //Invoco la funcion del padre y le paso el objeto con los datos del formulario
       this.props.handleStateData(data)
+      //Reseteo el error en caso de haber aparecido
       this.setState({ error: false })
     }
   }

@@ -1,5 +1,7 @@
+//Imports externos
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
+//Imports personales
 import Nav from '../Nav';
 import { userContext } from '../../context/userContext'
 

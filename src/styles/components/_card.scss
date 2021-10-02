@@ -5,3 +5,14 @@
         color: #EB5E28;
     }
 }
+
+@media (min-width: $breakpoint-laptops) {
+    @keyframes grow {
+        0% { width: 0% }
+        100% { width: 18rem }
+    }
+    .card{
+        animation-name: grow;
+        animation-duration: 3s;
+    }
+}

@@ -1,5 +1,18 @@
-.newsList{
-    @include centrado;
-    min-height: 90vh;
-    margin: 0;
+.newsList {
+  @include centrado;
+  min-height: 90vh;
+  margin: 0;
+}
+@media (min-width: $breakpoint-laptops) {
+
+    .news{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+    }
+    .card{
+        margin-left: 2em;
+    }
 }

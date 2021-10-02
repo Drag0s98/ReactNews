@@ -38,10 +38,31 @@ form {
 @media (min-width: $breakpoint-tablet) {
   section {
     @include centrado;
-    margin: 3em;
     width: 100%;
     & > div {
       margin-right: 5em;
     }
   }
+}
+
+@media (min-width: $breakpoint-laptops) {
+  .newsList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .boxText {
+    height: 3em; 
+    font-size: 20px;
+  }
+
+  .button:hover{
+    width: 31%;
+    height: 2.2em;
+  }
+  .button:active{
+    background-color: gray;
+  }
+
 }

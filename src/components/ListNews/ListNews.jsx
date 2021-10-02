@@ -52,7 +52,7 @@ class ListNews extends Component {
   render() {
     return (
       <section className='newsList'>
-        <article>
+        <article className='news'>
           {this.state.spinner === true?<PropagateLoader color={'#EB5E28'} size={50}/>: this.paintCards()}
         </article>
       </section>

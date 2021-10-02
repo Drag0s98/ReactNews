@@ -1,7 +1,7 @@
-//Imports Externos
+//Imports Externos.
 import React, { Component } from "react";
 import { Card, ListGroup, ListGroupItem, Button } from "react-bootstrap";
-//Imports Internos
+//Imports Internos.
 import './Card.css'
 
 class Cardbody extends Component {

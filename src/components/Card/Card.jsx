@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Api from '../ListNews'
-import Local from '../Form'
+import { Card, ListGroup, ListGroupItem, Button } from "react-bootstrap";
 
+import './Card.css'
 
-class Card extends Component {
+class Cardbody extends Component {
 
   constructor(props) {
     super(props)
@@ -14,24 +14,29 @@ class Card extends Component {
   }
 
   render() {
-
-    const { author, content, description, publishedAt, title, url, urlToImage } = this.props.info
-    console.log(this.props.info);
+    const { author, description, publishedAt, title, url, urlToImage } = this.props.info
     return (
-      <section>
-        <article>
-          <p>{author}</p>
-          <p>{content}</p>
-          <p>{description}</p>
-          <p>{publishedAt}</p>
-          <p>{title}</p>
-          <p>{url}</p>
-          <img src={urlToImage} alt={title}/>
-          <button onClick={this.props.remove}>Delete</button>
-        </article>
-      </section>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={urlToImage} />
+        <Card.Body>
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>
+            {description}
+          </Card.Text>
+        </Card.Body>
+        <ListGroup className="list-group-flush">
+          <ListGroupItem>{author}</ListGroupItem>
+          <ListGroupItem>{publishedAt}</ListGroupItem>
+        </ListGroup>
+        <Card.Body>
+          <Card.Link href={url}>Saber m&aacute;s</Card.Link>
+        </Card.Body>
+        <ListGroup>
+          <Button variant='dark' onClick={this.props.remove}>Delete</Button>
+        </ListGroup>
+      </Card>
     );
   }
 }
 
-export default Card;
+export default Cardbody;

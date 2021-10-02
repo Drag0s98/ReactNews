@@ -1,0 +1,72 @@
+main {
+  & > h3 {
+    margin: 2em;
+  }
+}
+section {
+  min-height: 22vh;
+  margin-top: 3em;
+  margin-bottom: 10em;
+
+}
+h6 {
+  background-color: rgba(0, 0, 0, 0.548);
+  height: 3em;
+  @include centrado;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & > input {
+    color: black;
+  }
+
+  & > .boxText {
+    width: 70%;
+  }
+  & > .button {
+    width: 30%;
+    height: 2em;
+    margin-top: 1em;
+    border-radius: 5px;
+    background-color: #eb5e28;
+    border: none;
+    color: white;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  section {
+    @include centrado;
+    width: 100%;
+    & > div {
+      margin-right: 5em;
+    }
+  }
+}
+
+
+
+@media (min-width: $breakpoint-laptops) {
+  .newsList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .boxText {
+    height: 3em; 
+    font-size: 20px;
+  }
+
+  .button:hover{
+    width: 31%;
+    height: 2.2em;
+  }
+  .button:active{
+    background-color: gray;
+  }
+
+}

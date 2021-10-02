@@ -33,7 +33,7 @@ class Home extends Component {
           <Carousel>
             <Carousel.Item interval={5000}>
               <img
-                className="d-block w-100"
+                className="img"
                 src={this.props.data[0].urlToImage}
                 alt="First slide"
               />
@@ -43,7 +43,7 @@ class Home extends Component {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <img
-                className="d-block w-100"
+                className="img"
                 src={this.props.data[1].urlToImage}
                 alt="Second slide"
               />
@@ -53,7 +53,7 @@ class Home extends Component {
             </Carousel.Item>
             <Carousel.Item interval={5000}>
               <img
-                className="d-block w-100"
+                className="img"
                 src={this.props.data[2].urlToImage}
                 alt="Third slide"
               />

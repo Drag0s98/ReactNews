@@ -5,6 +5,14 @@
     width: 100%;
     @include centrado;
 }
+.buttonForm{
+    background-color: #eb5e28;
+    margin-top: 1rem;
+}
+#alert{
+    background-color: rgba(197, 38, 38, 0.288);
+    margin-top: 2em;
+}
 .newsForm{
     width: 100%;
     margin-bottom: 10em;
@@ -19,12 +27,14 @@
         height: 2em;
         border-radius: 5px;
         border: 0;
+        color: black;
     }
 
     & > textarea {
         height: 10rem;
         width: 70%;
         border: 0;
+        color: black;
     }
 
     & > button {

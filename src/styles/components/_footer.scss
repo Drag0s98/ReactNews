@@ -7,9 +7,15 @@ footer{
     position: fixed;
     display: flex;
     align-items: center;
+    color: black;
     & > div{
         width: 100%;
         font-size: 0.7em;
+    }
+}
+.icon1{
+    & > svg > path:hover { 
+        color: #eb5e28;
     }
 }
 @media (min-width: $breakpoint-tablet) {

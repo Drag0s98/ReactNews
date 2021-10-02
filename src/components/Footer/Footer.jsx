@@ -11,7 +11,7 @@ class Footer extends Component {
             <Col>ReactNews made with React</Col>
             <Col>
               <a href="https://github.com/Drag0s98">
-                <div class="icon1">
+                <div className="icon1">
                   <svg
                     width="20px"
                     height="20px"

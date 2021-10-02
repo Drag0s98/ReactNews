@@ -6,6 +6,8 @@ main {
 section {
   min-height: 22vh;
   margin-top: 3em;
+  margin-bottom: 10em;
+
 }
 h6 {
   background-color: rgba(0, 0, 0, 0.548);
@@ -44,6 +46,8 @@ form {
     }
   }
 }
+
+
 
 @media (min-width: $breakpoint-laptops) {
   .newsList{

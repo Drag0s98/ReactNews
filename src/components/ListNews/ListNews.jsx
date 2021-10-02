@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Row } from "react-bootstrap";
 import { PropagateLoader } from "react-spinners";
 
 import './ListNews.css'

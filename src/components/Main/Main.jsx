@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router-dom';
 import data from '../../data'
 import Home from '../Home'
 import Form from '../Form'
-import News from '../Card'
 import Error from '../Error'
 import Api from '../ListNews'
 

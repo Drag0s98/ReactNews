@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Alert } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
 import './Form.css'
 
 class Form extends Component {
@@ -39,8 +40,6 @@ class Form extends Component {
       }
       //Invoco la funcion del padre y le paso el objeto con los datos del formulario
       this.props.handleStateData(data)
-      //Reseteo el error en caso de haber aparecido
-      this.setState({ error: false })
     }
   }
   render() {
@@ -71,7 +70,7 @@ class Form extends Component {
           <input type="text" name='url' />
           <label>Image</label>
           <input type="text" name='urlToImage' />
-            <input type="submit" value="Publish" className='buttonForm' />
+          <input type="submit" value="Publish" className='buttonForm' />
         </form>
       </>
     );
